@@ -1,4 +1,4 @@
-package cardpack;
+package com.example.demo.cardpack;
 
 /**
 *

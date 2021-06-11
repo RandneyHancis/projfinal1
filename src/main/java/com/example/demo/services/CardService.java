@@ -1,11 +1,11 @@
-package services;
+package com.example.demo.services;
 
 import java.util.Random;
 
 import org.springframework.stereotype.Service;
 
-import cardpack.CartaBaralho;
-import dto.CartaDTO;
+import com.example.demo.cardpack.CartaBaralho;
+import com.example.demo.dto.CartaDTO;
 
 @Service
 public class CardService {
