@@ -1,5 +1,7 @@
 package com.example.demo.cardpack;
 
+import java.util.UUID;
+
 import javax.swing.JLabel;
 
 /**
@@ -11,7 +13,7 @@ public class Jogador {
    private final String nomeJogador;
    private CartaBaralho[] mao = CartaBaralho.geraBaralho();
    private int pontos;
-   private int idJogador;
+   private String idJogador = geraid();
 
    public Jogador(String nomeJogador, CartaBaralho[] mao, int pontos) {
        this.nomeJogador = nomeJogador;
@@ -41,12 +43,18 @@ public class Jogador {
        return soma;
    }
 
-   public int getIdJogador() {
+   public String getIdJogador() {
 	   return idJogador;
    }
 
-   public void setIdJogador(int idJogador) {
+   public void setIdJogador(String idJogador) {
 	   this.idJogador = idJogador;
+   }
+   
+   public String geraid(){
+	   final String idjogador = UUID.randomUUID().toString();
+	   
+	   return idjogador; 
    }
    
 }
