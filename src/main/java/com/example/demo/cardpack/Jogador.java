@@ -9,10 +9,10 @@ import javax.swing.JLabel;
 * @author Demerson, Paulo, Randney
 */
 public class Jogador {
-   private final int cartasNoJogo = 5;
+   private int cartasNoJogo = 5;
    private final String nomeJogador;
    private CartaBaralho[] mao = CartaBaralho.geraBaralho();
-   private int pontos;
+   private int pontos = 0;
    private String idJogador = geraid();
 
    public Jogador(String nomeJogador, CartaBaralho[] mao, int pontos) {
@@ -20,6 +20,7 @@ public class Jogador {
        this.mao = CartaBaralho.geraBaralho();
        this.pontos = 0;
    }
+   
 
    public int getCartasNoJogo() {
        return cartasNoJogo;
