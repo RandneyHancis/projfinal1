@@ -6,45 +6,44 @@ import java.io.Serializable;
 public class CartaDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
-	private String cardName;
-	private String cardSuit;
-	private String codigoNomeCarta;
+	private String nomeCarta;
+	private String naipe;
+	private String codigoCarta;
 	private String codigoNaipe;
 	
 	public CartaDTO() {
 		
 	}	
 	
-	public CartaDTO(String cardName, String cardSuit, String codigoNomeCarta, String codigoNaipe) {
-		super();
-		this.cardName = cardName;
-		this.cardSuit = cardSuit;
-		this.codigoNomeCarta = codigoNomeCarta;
+	public CartaDTO(String nomeCarta, String naipe, String codigoCarta, String codigoNaipe) {
+		this.nomeCarta = nomeCarta;
+		this.naipe = naipe;
+		this.codigoCarta = codigoCarta;
 		this.codigoNaipe = codigoNaipe;
 	}
 
-	public String getCardName() {
-		return cardName;
+	public String getNomeCarta() {
+		return nomeCarta;
 	}
 
-	public void setCardName(String cardName) {
-		this.cardName = cardName;
+	public void setNomeCarta(String nomeCarta) {
+		this.nomeCarta = nomeCarta;
 	}
 
-	public String getCardSuit() {
-		return cardSuit;
+	public String getNaipe() {
+		return naipe;
 	}
 
-	public void setCardSuit(String cardSuit) {
-		this.cardSuit = cardSuit;
+	public void setNaipe(String naipe) {
+		this.naipe = naipe;
 	}
 
-	public String getCodigoNomeCarta() {
-		return codigoNomeCarta;
+	public String getCodigoCarta() {
+		return codigoCarta;
 	}
 
-	public void setCodigoNomeCarta(String codigoNomeCarta) {
-		this.codigoNomeCarta = codigoNomeCarta;
+	public void setCodigoCarta(String codigoCarta) {
+		this.codigoCarta = codigoCarta;
 	}
 
 	public String getCodigoNaipe() {

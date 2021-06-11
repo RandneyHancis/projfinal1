@@ -2,9 +2,12 @@ package services;
 
 import java.util.Random;
 
+import org.springframework.stereotype.Service;
+
 import cardpack.CartaBaralho;
 import dto.CartaDTO;
 
+@Service
 public class CardService {
 
 	private Random random = new Random();

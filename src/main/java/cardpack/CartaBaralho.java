@@ -21,7 +21,7 @@ public class CartaBaralho {
     public CartaBaralho(Cartas carta, Naipe naipe, String image) {
         this.carta = carta;
         this.naipe = naipe;
-        this.image = image;
+        CartaBaralho.image = image;
     }
 
     public Cartas getCarta() {
